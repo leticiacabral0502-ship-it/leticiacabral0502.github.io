@@ -78,5 +78,294 @@
   }
   .hero p {
     font-size: 1.3rem;
-    max-width: 6
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+  }
+  .btn {
+    display: inline-block;
+    background: #00ff88;
+    color: #000;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background: #00cc6f;
+  }
 
+  /* Benefits Section */
+  .benefits {
+    background: #121212;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .benefits h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .benefit-item {
+    background: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00ff88aa;
+    transition: box-shadow 0.3s ease;
+  }
+  .benefit-item:hover {
+    box-shadow: 0 0 20px #00ff88ff;
+  }
+  .benefit-item img {
+    margin-bottom: 20px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .benefit-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #00ff88;
+  }
+  .benefit-item p {
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+
+  /* Video Section */
+  .video-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .video-section h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .video-container iframe {
+    position: absolute;
+    top:0; left:0; width: 100%; height: 100%;
+    border-radius: 12px;
+    border: none;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    background: #121212;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .testimonials h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .testimonial-item {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 10px #00ff88aa;
+  }
+  .testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 2px solid #00ff88;
+  }
+  .testimonial-text {
+    font-style: italic;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+  .testimonial-author {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #00ff88;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+  .faq-section h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  details {
+    background: #1a1a1a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 18px 20px;
+    box-shadow: 0 0 10px #00ff88aa;
+  }
+  summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #00ff88;
+  }
+  summary:hover {
+    text-decoration: underline;
+  }
+  details p {
+    margin-top: 12px;
+    opacity: 0.8;
+  }
+
+  /* Footer */
+  footer {
+    background: #000;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="container">
+  <div class="logo">Calistenia Pro</div>
+  <nav>
+    <a href="#benefits">Benefícios</a>
+    <a href="#video">Vídeo</a>
+    <a href="#testimonials">Depoimentos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#purchase" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">Quero Acessar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Treine em Casa com o Método Completo de Calistenia</h1>
+    <p>Mais de 400 treinos progressivos para todos os níveis, usando só o peso do corpo — sem equipamentos caros.</p>
+    <a href="https://SEUCHECKOUTAQUI.com" class="btn">Quero Começar Agora</a>
+  </div>
+</section>
+
+<section class="benefits" id="benefits">
+  <h2>Por Que Escolher Este Método?</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80" alt="Treino Progressivo" />
+      <h3>Treinos Progressivos</h3>
+      <p>Conteúdo organizado do iniciante ao avançado para evolução consistente.</p>
+    </div>
+    <div class="benefit-item">
+      <img src="https://images.unsplash.com/photo-1594737625785-cddf1b27cbe3?auto=format&fit=crop&w=400&q=80" alt="Sem Equipamentos" />
+      <h3>Sem Equipamentos</h3>
+      <p>Você usa apenas o peso do corpo. Treine em casa ou na rua sem gastar nada.</p>
+    </div>
+    <div class="benefit-item">
+      <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b6?auto=format&fit=crop&w=400&q=80" alt="Onde Quiser" />
+      <h3>Treine Onde Quiser</h3>
+      <p>Faça o treino em casa, parque ou em qualquer lugar com seu celular.</p>
+    </div>
+  </div>
+</section>
+
+<section class="video-section" id="video">
+  <h2>Veja Como Funciona</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/Mp7saPhMyA4" title="Vídeo de Apresentação" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h2>O Que Dizem Quem Já Fez</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-item">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Lucas M." class="testimonial-photo" />
+      <p class="testimonial-text">“Nunca achei que conseguiria treinar de verdade em casa. Com este método, já evoluí muito em 3 meses!”</p>
+      <p class="testimonial-author">Lucas M.</p>
+    </div>
+    <div class="testimonial-item">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fernanda S." class="testimonial-photo" />
+      <p class="testimonial-text">“Os treinos são simples e funcionam para todo mundo. Amo a flexibilidade e o conteúdo progressivo.”</p>
+      <p class="testimonial-author">Fernanda S.</p>
+    </div>
+    <div class="testimonial-item">
+      <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="André T." class="testimonial-photo" />
+      <p class="testimonial-text">“Já tentei várias academias, mas só com esse método consegui resultados reais e consistentes.”</p>
+      <p class="testimonial-author">André T.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <h2>Dúvidas Frequentes</h2>
+  <details>
+    <summary>Preciso de equipamentos para treinar?</summary>
+    <p>Não. Todos os treinos usam apenas o peso do seu corpo. Você pode treinar onde quiser.</p>
+  </details>
+  <details>
+    <summary>Sou iniciante, consigo acompanhar?</summary>
+    <p>Sim! O programa começa do básico e evolui de acordo com seu ritmo e nível.</p>
+  </details>
+  <details>
+    <summary>Quanto tempo preciso dedicar?</summary>
+    <p>Os treinos são rápidos e objetivos, geralmente entre 20 a 40 minutos por dia.</p>
+  </details>
+  <details>
+    <summary>Como faço para acessar o conteúdo?</summary>
+    <p>Após a compra, você terá acesso imediato à plataforma online, para treinar quando quiser.</p>
+  </details>
+</section>
+
+<section class="benefits" id="purchase" style="padding-bottom: 80px;">
+  <h2>Comece Agora Mesmo</h2>
+  <p style="max-width: 600px; margin: 10px auto 30px; font-size: 1.1rem; opacity: 0.9;">Transforme seu corpo e sua saúde com um método testado e aprovado. Treine sem sair de casa e no seu ritmo.</p>
+  <div class="center">
+    <a href="https://SEUCHECKOUTAQUI.com" class="btn" style="font-size: 1.2rem; padding: 18px 50px;">Quero Acessar Agora</a>
+  </div>
+</section>
+
+<footer>
+  Conteúdo educacional • Resultados podem variar conforme dedicação individual.<br />
+  &copy; 2026 Calistenia Pro. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
