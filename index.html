@@ -1,160 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programa Completo de Calistenia - Treine em Casa</title>
 
-<title>Treine com Calistenia em Casa</title>
+<meta name="description" content="Método de calistenia para você treinar usando apenas o peso do corpo, com mais de 400 treinos, para todos os níveis." />
+<meta property="og:title" content="Programa Completo de Calistenia - Treine em Casa" />
+<meta property="og:description" content="Método de calistenia para você treinar usando apenas o peso do corpo, com mais de 400 treinos, para todos os níveis." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1599058917212-d750089bc07d" />
+<meta property="og:type" content="website" />
 
-<!-- Meta Facebook -->
-<meta name="description" content="Programa de calistenia com treinos progressivos usando apenas o peso do corpo.">
-<meta property="og:title" content="Treine com Calistenia em Casa">
-<meta property="og:description" content="Método estruturado de calistenia para treinar em casa ou ao ar livre.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1599058917212-d750089bc07d">
-<meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#0e0e0e;color:#fff;line-height:1.6}
-a{text-decoration:none}
-.hero{
-  padding:100px 20px;
-  text-align:center;
-  background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-  url('https://images.unsplash.com/photo-1599058917212-d750089bc07d') center/cover
-}
-.hero h1{font-size:2.6rem;margin-bottom:20px}
-.hero p{font-size:1.2rem;opacity:.95;margin-bottom:30px}
-.btn{
-  display:inline-block;
-  background:#00ff88;
-  color:#000;
-  padding:16px 36px;
-  border-radius:8px;
-  font-weight:700;
-  transition:.3s
-}
-.btn:hover{background:#00cc6f}
-.section{padding:60px 20px;max-width:1050px;margin:auto}
-.center{text-align:center}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px
-}
-.card{
-  background:#1a1a1a;
-  padding:25px;
-  border-radius:12px
-}
-.card img{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:15px
-}
-.highlight{
-  background:#121212;
-  border-top:2px solid #00ff88;
-  border-bottom:2px solid #00ff88
-}
-ul{margin-top:20px}
-ul li{margin-bottom:10px}
-footer{
-  background:#000;
-  padding:30px;
-  text-align:center;
-  font-size:.85rem;
-  opacity:.6
-}
-</style>
-</head>
+  /* Reset e base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: #0e0e0e;
+    color: #fff;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  a {
+    color: #00ff88;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
 
-<body>
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Pare de Depender de Academia Para Treinar</h1>
-  <p>Use apenas o peso do corpo e siga um método claro de calistenia — mesmo que você esteja começando agora.</p>
-  <a href="https://SEUCHECKOUTAQUI.com" class="btn">Ver Acesso Agora</a>
-</section>
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: #121212;
+    border-bottom: 2px solid #00ff88;
+  }
+  header .logo {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #00ff88;
+  }
+  nav a {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
 
-<!-- DOR + SOLUÇÃO -->
-<section class="section">
-  <h2 class="center">O Problema Não é Falta de Vontade</h2>
-  <p class="center">
-    A maioria das pessoas desiste porque segue treinos aleatórios, sem progressão e sem um plano claro.
-    <br><br>
-    Este programa foi criado para quem quer parar de improvisar e começar a treinar com método.
-  </p>
-</section>
+  /* Hero */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1599058917212-d750089bc07d') center/cover no-repeat;
+    padding: 100px 20px 80px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 6
 
-<!-- BENEFÍCIOS -->
-<section class="section">
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
-      <h3>Treinos Progressivos</h3>
-      <p>Do nível iniciante ao avançado, respeitando sua evolução.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1594737625785-cddf1b27cbe3">
-      <h3>Sem Equipamentos</h3>
-      <p>Treine apenas com o peso do próprio corpo.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b6">
-      <h3>Onde Quiser</h3>
-      <p>Casa, praça, parque ou viagem.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTEÚDO -->
-<section class="section highlight">
-  <h2 class="center">O Que Você Recebe</h2>
-  <ul>
-    <li>✔️ Biblioteca com mais de 400 treinos em vídeo</li>
-    <li>✔️ Exercícios organizados por nível</li>
-    <li>✔️ Método simples e direto</li>
-    <li>✔️ Acesso online imediato</li>
-  </ul>
-
-  <div class="center" style="margin-top:30px">
-    <a href="https://SEUCHECKOUTAQUI.com" class="btn">Quero Conhecer o Programa</a>
-  </div>
-</section>
-
-<!-- QUEBRA DE OBJEÇÃO -->
-<section class="section">
-  <h2 class="center">Nunca Treinei Calistenia</h2>
-  <p class="center">
-    Sem problema.<br><br>
-    O programa começa do básico e avança apenas quando você estiver pronto.
-    Não existe pressão — existe progressão.
-  </p>
-</section>
-
-<!-- GARANTIA -->
-<section class="section highlight">
-  <h2 class="center">Garantia de 7 Dias</h2>
-  <p class="center">
-    Você pode acessar o conteúdo com tranquilidade.
-    Caso não faça sentido para você, o reembolso pode ser solicitado dentro do prazo.
-  </p>
-</section>
-
-<!-- CTA FINAL -->
-<section class="hero">
-  <h1>Comece Quando Quiser. Treine Onde Quiser.</h1>
-  <p>Sem desculpas. Sem improviso. Apenas um método claro.</p>
-  <a href="https://SEUCHECKOUTAQUI.com" class="btn">Acessar Agora</a>
-</section>
-
-<footer>
-  Conteúdo educacional • Resultados variam conforme dedicação individual
-</footer>
-
-</body>
-</html>
