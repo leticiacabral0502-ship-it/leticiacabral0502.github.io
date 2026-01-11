@@ -4,95 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcia: Um Amor que Atravessa o Tempo</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      color: #2f2f2f;
-      background: #f7f3ee;
-    }
-    .hero {
-      position: relative;
-      width: 100%;
-      max-height: 520px;
-      overflow: hidden;
-      background: #f7f3ee;
-    }
-    .hero img {
-      width: 100%;
-      height: auto;
-      max-height: 520px;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(0,0,0,0.15));
-    }
-    .hero-text {
-      position: absolute;
-      top: 10%;
-      width: 100%;
-      text-align: center;
-      z-index: 2;
-      color: #8b3a3a;
-    }
-    .hero-text h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    .hero-text h2 {
-      font-size: 1.6rem;
-      font-weight: normal;
-      margin-top: 10px;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
-      line-height: 1.7;
-    }
-    section {
-      margin-bottom: 60px;
-    }
-    section h3 {
-      text-align: center;
-      color: #8b3a3a;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .story p {
-      margin-bottom: 18px;
-      text-align: justify;
-    }
-    .quote {
-      text-align: center;
-      font-style: italic;
-      font-size: 1.3rem;
-      color: #555;
-    }
-    .cta {
-      text-align: center;
-    }
-    .cta a {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #8b3a3a;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 1.1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #ece6de;
-      font-size: 0.9rem;
-    }
-  </style>
+ <style>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(180deg, #0f0f14, #1a1a24);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Banner principal */
+.hero {
+  width: 100%;
+  background: linear-gradient(180deg, #f7f3ee, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Conteúdo */
+.container {
+  padding: 24px;
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Botão CTA */
+.cta-button {
+  display: inline-block;
+  margin: 32px 0;
+  padding: 16px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(90deg, #ff4d6d, #ff7a18);
+  border-radius: 40px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 122, 24, 0.4);
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 64px 16px;
+  background: #ffffff;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.cta-section p {
+  font-size: 18px;
+  max-width: 640px;
+  margin: 0 auto 32px;
+  color: #555;
+}
+
+
+
+/* Texto */
+.text-section {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    max-height: 380px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+</style>
 </head>
 <body>
 
